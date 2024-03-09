@@ -13,6 +13,3 @@ class SimpleQueryGeocoder(Geocoder):
             current_id = area.parent_id
 
         return full_address.strip(", ")
-
-geocoder = SimpleQueryGeocoder(samples=3)
-print(geocoder.geocode())
