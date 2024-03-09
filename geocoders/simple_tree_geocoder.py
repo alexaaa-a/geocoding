@@ -39,7 +39,3 @@ class SimpleTreeGeocoder(Geocoder):
         address = ", ".join([node for node in reversed(res)])
 
         return address
-
-
-geocodd = SimpleTreeGeocoder(samples=5)
-print(geocodd.geocode())
